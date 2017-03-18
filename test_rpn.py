@@ -9,7 +9,7 @@ class TestBasics(unittest.TestCase):
 		result = rpn.calculate('5 3 -')
 		self.assertEqual(2, result)
 		print("Subtraction passed\n")
-        def test_carat(self):
-                result = rpn.calculate('5 2 ^')
-                self.assertEqual(25, result)
-                print("Exponentiation passed\n")
+	def test_carat(self):
+		result = rpn.calculate('5 2 ^')
+		self.assertEqual(25, result)
+		print("Exponentiation passed\n")
