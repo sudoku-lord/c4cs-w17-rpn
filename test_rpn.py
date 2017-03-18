@@ -12,4 +12,4 @@ class TestBasics(unittest.TestCase):
         def test_carat(self):
                 result = rpn.calculate('5 2 ^')
                 self.assertEqual(25, result)
-		print("Exponentiation passed\n")
+                print("Exponentiation passed\n")
