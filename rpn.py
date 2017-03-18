@@ -5,6 +5,7 @@ OPERATORS = {
 	'-': operator.sub,
 	'*': operator.mul,
 	'/': operator.truediv,
+        '^': operator.exponent
 }
 def calculate(arg):
 	stack = list()
