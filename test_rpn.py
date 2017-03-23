@@ -24,7 +24,7 @@ if result_one == 2:
 
 print("Testing Subtraction:\n")
 result_two = rpn.calculate('5 3 -')
-if resulnt_two == 2:
+if result_two == 2:
 	print("Subtraction passed YO YO\n")
 
 print("Testing Exponentiation:\n")
