@@ -19,15 +19,15 @@ class TestBasics(unittest.TestCase):
 		
 print("Testing Addition:\n")
 result_one = rpn.calculate('1 1 +')
-self.assertEqual(2, result_one)
-print("Addition passed YO\n")
+if result_one == 2:
+	print("Addition passed YO\n")
 
 print("Testing Subtraction:\n")
 result_two = rpn.calculate('5 3 -')
-self.assertEqual(2, result_two)
-print("Subtraction passed YO YO\n")
+if resulnt_two == 2:
+	print("Subtraction passed YO YO\n")
 
 print("Testing Exponentiation:\n")
 result_three = rpn.calculate('5 2 ^')
-self.assertEqual(25, result_three)
-print("Exponentiation passed YO YO YO\n")
+if result_three == 25:
+	print("Exponentiation passed YO YO YO\n")
