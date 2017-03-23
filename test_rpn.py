@@ -23,14 +23,14 @@ text_one = colored("Testing Addition:\n", 'red', attrs=['reverse', 'blink'])
 print(text_one)
 result_one = rpn.calculate('1 1 +')
 if result_one == 2:
-	print("Addition passed YO\n")
+	cprint("Addition passed YO\n", 'magenta')
 
 cprint("Testing Subtraction:\n", 'blue')
 result_two = rpn.calculate('5 3 -')
 if result_two == 2:
-	print("Subtraction passed YO YO\n")
+	cprint("Subtraction passed YO YO\n", 'cyan')
 
 print("Testing Exponentiation:\n")
 result_three = rpn.calculate('5 2 ^')
 if result_three == 25:
-	print("Exponentiation passed YO YO YO\n")
+	print("Exponentiation passed YO YO YO\n", 'green', 'on_yellow')
