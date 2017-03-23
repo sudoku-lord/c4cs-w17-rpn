@@ -3,5 +3,5 @@ python: "3.5"
 install:
   - pip3 install coveralls
   - pip3 install termcolor
-script: coverage run test_rpn.py # had run instead of python originally
+script: coverage run -m unittest # test_rpn.py 
 after_success: coveralls
