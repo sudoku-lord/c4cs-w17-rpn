@@ -1,5 +1,7 @@
 import unittest
 import rpn
+import sys
+from termcolor import colored, cprint
 class TestBasics(unittest.TestCase):
 	def test_add(self):
 		print("Testing Addition:\n")
@@ -17,12 +19,13 @@ class TestBasics(unittest.TestCase):
 		self.assertEqual(25, result)
 		print("Exponentiation passed YO YO YO\n")
 		
-print("Testing Addition:\n")
+text_one = colored("Testing Addition:\n", 'red', attrs=['reverse', 'blink'])
+print(text_one)
 result_one = rpn.calculate('1 1 +')
 if result_one == 2:
 	print("Addition passed YO\n")
 
-print("Testing Subtraction:\n")
+cprint("Testing Subtraction:\n", 'blue')
 result_two = rpn.calculate('5 3 -')
 if result_two == 2:
 	print("Subtraction passed YO YO\n")
