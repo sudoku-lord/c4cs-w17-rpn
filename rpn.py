@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import operator
-from colorama import Fore, Back, Style
 OPERATORS = {
 	'+': operator.add,
 	'-': operator.sub,
@@ -25,6 +24,6 @@ def calculate(arg):
 def main():
 	while True:
 		result = calculate(input('rpn calc> '))
-		print(Fore.RED + "Result:", result)
+		print("Result:", result)
 if __name__ == '__main__':
 	main()
