@@ -1,5 +1,7 @@
 language: python
 python: "3.5"
-install: pip3 install coveralls
+install:
+  - pip3 install coveralls
+  - pip3 install termcolor
 script: coverage run test_rpn.py # had run instead of python originally
 after_success: coveralls
