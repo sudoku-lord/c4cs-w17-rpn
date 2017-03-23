@@ -16,3 +16,18 @@ class TestBasics(unittest.TestCase):
 		result = rpn.calculate('5 2 ^')
 		self.assertEqual(25, result)
 		print("Exponentiation passed YO YO YO\n")
+		
+print("Testing Addition:\n")
+result_one = rpn.calculate('1 1 +')
+self.assertEqual(2, result_one)
+print("Addition passed YO\n")
+
+print("Testing Subtraction:\n")
+result_two = rpn.calculate('5 3 -')
+self.assertEqual(2, result_two)
+print("Subtraction passed YO YO\n")
+
+print("Testing Exponentiation:\n")
+result_three = rpn.calculate('5 2 ^')
+self.assertEqual(25, result_three)
+print("Exponentiation passed YO YO YO\n")
